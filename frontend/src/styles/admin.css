@@ -1,0 +1,141 @@
+/* ===================================
+   ADMIN PAGE
+=================================== */
+
+.admin-page {
+
+    padding: 2rem 0;
+}
+
+/* ===================================
+   PAGE TITLE
+=================================== */
+
+.admin-page h1 {
+
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+
+    color: var(--text-primary);
+}
+
+.admin-page h2 {
+
+    margin: 2.5rem 0 1rem;
+
+    color: var(--text-primary);
+}
+
+/* ===================================
+   DASHBOARD STATS
+=================================== */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.stats-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 1.5rem;
+
+    text-align: center;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+}
+
+.stats-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+}
+
+.stats-card h3 {
+
+    color: var(--text-secondary);
+
+    margin-bottom: .75rem;
+
+    font-size: 1rem;
+}
+
+.stats-card p {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+}
+
+/* ===================================
+   USERS TABLE
+=================================== */
+
+.table td:last-child {
+
+    width: 130px;
+
+    text-align: center;
+}
+
+.table button {
+
+    width: 100%;
+}
+
+/* ===================================
+   EMPTY STATE
+=================================== */
+
+.admin-page > p {
+
+    text-align: center;
+
+    color: var(--text-secondary);
+
+    padding: 2rem;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 900px) {
+
+    .stats-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .stats-card p {
+
+        font-size: 1.7rem;
+    }
+
+}

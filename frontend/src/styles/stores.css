@@ -1,0 +1,198 @@
+/* ===================================
+   STORES PAGE
+=================================== */
+
+.stores-page {
+
+    padding: 2rem 0;
+}
+
+/* ===================================
+   PAGE TITLE
+=================================== */
+.stores-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.stores-page h2 {
+
+    margin-bottom: 1.5rem;
+
+    font-size: 2rem;
+
+    color: var(--text-primary);
+}
+
+/* ===================================
+   SEARCH
+=================================== */
+
+.search-input {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    margin-bottom: 2rem;
+}
+
+/* ===================================
+   STORE CARD
+=================================== */
+
+.store-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+}
+
+.store-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+}
+
+/* ===================================
+   STORE TITLE
+=================================== */
+
+.store-card h3 {
+
+    margin-bottom: 1rem;
+
+    color: var(--primary);
+
+    font-size: 1.3rem;
+}
+
+/* ===================================
+   STORE DETAILS
+=================================== */
+
+.store-card p {
+
+    margin-bottom: .7rem;
+
+    color: var(--text-secondary);
+}
+
+.store-card b {
+
+    color: var(--text-primary);
+}
+
+/* ===================================
+   RATING SECTION
+=================================== */
+
+.store-rating-section {
+
+    margin-top: 1.5rem;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+.store-rating-section label {
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+}
+
+.store-rating-section .form-select {
+
+    width: 170px;
+}
+
+/* ===================================
+   EMPTY STATE
+=================================== */
+
+.stores-page > p {
+
+    margin-top: 3rem;
+
+    text-align: center;
+
+    color: var(--text-secondary);
+
+    font-size: 1.1rem;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+
+    .stores-page {
+
+        padding: 1rem 0;
+    }
+
+    .stores-page h2 {
+
+        font-size: 1.7rem;
+    }
+
+    .search-input {
+
+        max-width: 100%;
+    }
+
+    .store-rating-section {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .store-rating-section .form-select {
+
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .store-card {
+
+        padding: 1rem;
+    }
+
+    .store-card h3 {
+
+        font-size: 1.15rem;
+    }
+
+}

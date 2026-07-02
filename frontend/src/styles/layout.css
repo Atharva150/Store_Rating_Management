@@ -1,0 +1,215 @@
+/* ===================================
+   NAVBAR
+=================================== */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    height: var(--navbar-height);
+
+    background: var(--surface);
+
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 2rem;
+
+    box-shadow: var(--shadow-sm);
+}
+
+/* ===================================
+   LEFT
+=================================== */
+
+.navbar-left {
+
+    display: flex;
+
+    align-items: center;
+}
+
+.navbar-brand {
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+
+    transition: var(--transition);
+}
+
+.navbar-brand:hover {
+
+    color: var(--primary-dark);
+}
+
+/* ===================================
+   CENTER
+=================================== */
+
+.navbar-center {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+}
+
+/* ===================================
+   RIGHT
+=================================== */
+
+.navbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+}
+
+/* ===================================
+   NAV LINKS
+=================================== */
+
+.nav-link {
+
+    padding: .6rem 1rem;
+
+    border-radius: var(--radius-md);
+
+    color: var(--text-secondary);
+
+    font-weight: 500;
+
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+
+    background: var(--primary-light);
+
+    color: var(--primary);
+}
+
+.nav-link.active {
+
+    background: var(--primary);
+
+    color: white;
+}
+
+/* ===================================
+   USER INFO
+=================================== */
+
+.navbar-user {
+
+    color: var(--text-secondary);
+
+    font-size: .95rem;
+
+    white-space: nowrap;
+}
+
+/* ===================================
+   MAIN LAYOUT
+=================================== */
+
+.app-layout {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.app-main {
+
+    flex: 1;
+
+    padding: 2rem;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        flex-wrap: wrap;
+
+        height: auto;
+
+        padding: 1rem;
+
+        gap: 1rem;
+    }
+
+    .navbar-left {
+
+        width: 100%;
+    }
+
+    .navbar-center {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .navbar-right {
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: .75rem;
+    }
+
+    .navbar-brand {
+
+        font-size: 1.1rem;
+    }
+
+    .nav-link {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .navbar-user {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,297 @@
+/* ===========================
+   CSS Reset
+=========================== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   Root Variables
+=========================== */
+
+:root {
+
+    /* Primary */
+
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --primary-light: #dbeafe;
+
+    /* Success */
+
+    --success: #16a34a;
+    --success-light: #dcfce7;
+
+    /* Warning */
+
+    --warning: #f59e0b;
+    --warning-light: #fef3c7;
+
+    /* Danger */
+
+    --danger: #dc2626;
+    --danger-light: #fee2e2;
+
+    /* Neutral */
+
+    --background: #f8fafc;
+    --surface: #ffffff;
+    --surface-hover: #f1f5f9;
+
+    /* Text */
+
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --text-light: #9ca3af;
+
+    /* Borders */
+
+    --border: #e5e7eb;
+
+    /* Shadows */
+
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.05);
+    --shadow-md: 0 4px 10px rgba(0,0,0,.08);
+    --shadow-lg: 0 12px 30px rgba(0,0,0,.12);
+
+    /* Radius */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+
+    /* Layout */
+
+    --navbar-height: 72px;
+
+    --container-width: 1200px;
+
+    /* Transition */
+
+    --transition: .25s ease;
+}
+
+/* ===========================
+   Base
+=========================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+
+    background: var(--background);
+
+    color: var(--text-primary);
+
+    line-height: 1.5;
+
+    min-height: 100vh;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ===========================
+   Root App
+=========================== */
+
+#root {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* ===========================
+   Typography
+=========================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-weight: 600;
+
+    color: var(--text-primary);
+
+    line-height: 1.25;
+}
+
+p {
+
+    color: var(--text-secondary);
+}
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+ul,
+ol {
+
+    list-style: none;
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+button {
+
+    font: inherit;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: none;
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+input,
+textarea,
+select,
+button {
+
+    font: inherit;
+
+    outline: none;
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+/* ===========================
+   Utilities
+=========================== */
+
+.container {
+
+    width: min(100% - 2rem, var(--container-width));
+
+    margin-inline: auto;
+}
+
+.page {
+
+    flex: 1;
+
+    padding: 2rem 0;
+}
+
+.section {
+
+    margin-bottom: 2rem;
+}
+
+.text-center {
+
+    text-align: center;
+}
+
+.flex {
+
+    display: flex;
+}
+
+.flex-column {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.flex-between {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.flex-center {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.grid {
+
+    display: grid;
+}
+
+.hidden {
+
+    display: none;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: #cbd5e1;
+
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: #94a3b8;
+}

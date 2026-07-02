@@ -1,0 +1,171 @@
+/* ===================================
+   OWNER PAGE
+=================================== */
+
+.owner-page {
+
+    padding: 2rem 0;
+}
+
+/* ===================================
+   PAGE TITLE
+=================================== */
+
+.owner-page h1 {
+
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+
+    color: var(--text-primary);
+}
+
+/* ===================================
+   OWNER CARDS
+=================================== */
+
+.owner-card {
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    padding: 1.5rem;
+
+    margin-bottom: 1.5rem;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: var(--transition);
+}
+
+.owner-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-md);
+}
+
+/* section headings inside cards */
+
+.owner-card h2 {
+
+    margin-bottom: 1rem;
+
+    color: var(--text-primary);
+
+    font-size: 1.3rem;
+}
+
+/* text inside cards */
+
+.owner-card p {
+
+    margin-bottom: .6rem;
+
+    color: var(--text-secondary);
+}
+
+.owner-card b {
+
+    color: var(--text-primary);
+}
+
+/* ===================================
+   AVERAGE RATING DISPLAY
+=================================== */
+
+.owner-card h1 {
+
+    font-size: 2.5rem;
+
+    color: var(--primary);
+
+    text-align: center;
+
+    margin-top: 1rem;
+}
+
+/* ===================================
+   RATINGS LIST
+=================================== */
+
+.owner-card p {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: .5rem;
+}
+
+/* ===================================
+   USERS TABLE
+=================================== */
+
+.table td,
+.table th {
+
+    text-align: left;
+
+    padding: 0.9rem;
+}
+
+.table th {
+
+    background: var(--primary);
+
+    color: white;
+}
+
+.table tr:hover {
+
+    background: var(--surface-hover);
+}
+
+/* last column spacing (if needed later) */
+
+.table td:last-child {
+
+    text-align: center;
+}
+
+/* ===================================
+   EMPTY STATES
+=================================== */
+
+.owner-page > p {
+
+    text-align: center;
+
+    color: var(--text-secondary);
+
+    padding: 2rem;
+
+    font-size: 1.1rem;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+
+    .owner-page h1 {
+
+        font-size: 1.7rem;
+    }
+
+    .owner-card {
+
+        padding: 1rem;
+    }
+
+    .owner-card h1 {
+
+        font-size: 2rem;
+    }
+
+}

@@ -1,0 +1,106 @@
+/* ===================================
+   LOGIN PAGE
+=================================== */
+
+.login-page {
+
+    min-height: calc(100vh - var(--navbar-height));
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 2rem;
+}
+
+/* ===================================
+   LOGIN CARD
+=================================== */
+
+.login-card {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    background: var(--surface);
+
+    padding: 2.5rem;
+
+    border-radius: var(--radius-xl);
+
+    box-shadow: var(--shadow-lg);
+
+    border: 1px solid var(--border);
+}
+
+/* ===================================
+   TITLE
+=================================== */
+
+.login-title {
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.login-button {
+
+    width: 100%;
+}
+
+/* ===================================
+   ERROR
+=================================== */
+
+.login-error {
+
+    color: var(--danger);
+
+    font-size: .9rem;
+
+    text-align: center;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+.login-footer {
+
+    margin-top: 1.5rem;
+
+    text-align: center;
+}
+
+.login-footer a {
+
+    color: var(--primary);
+
+    font-weight: 600;
+}
+
+.login-footer a:hover {
+
+    text-decoration: underline;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 500px) {
+
+    .login-card {
+
+        padding: 2rem 1.5rem;
+    }
+
+}
