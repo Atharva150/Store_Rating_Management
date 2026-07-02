@@ -9,7 +9,7 @@ const {
     signupValidator,
     loginValidator,
     updatePasswordValidator
-} = require("../validators/authValidator");
+} = require("../validators/authvalidator");
 
 
 router.post(
