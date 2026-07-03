@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import ownerService from "../services/ownerService";
 
+import authService from "../services/authService";
+
 function OwnerDashboard() {
 
     const [store, setStore] = useState(null);
