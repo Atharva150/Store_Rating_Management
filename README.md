@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # ⭐ Store Rating Platform
 
 A full-stack Store Rating Platform built with **React**, **Node.js**, **Express.js**, and **PostgreSQL**. The application provides a role-based system where users can browse stores and submit ratings, store owners can monitor their store performance, and administrators can manage the entire platform.
@@ -12,14 +12,11 @@ A full-stack Store Rating Platform built with **React**, **Node.js**, **Express.
 A full-stack Store Rating Platform built with React, Node.js, Express.js, and PostgreSQL. The application provides a role-based system where users can browse stores and submit ratings, store owners can monitor their store performance, and administrators can manage the entire platform.
 
 📌 Project Overview
->>>>>>> 0a07ec544a8fced1872dec51814e0a2579311954
 
 The Store Rating Platform enables users to discover stores, submit ratings, and allows administrators and store owners to manage platform data through dedicated dashboards.
 
 The application follows a modular architecture with a clear separation between the frontend, backend, database, services, controllers, and reusable UI components.
 
-<<<<<<< HEAD
----
 
 ## 🚀 Features
 
@@ -173,7 +170,6 @@ USER
 OWNER
 
 ADMIN
-<<<<<<< HEAD
 ```
 
 Each role has access only to authorized routes using middleware-based role validation.
