@@ -108,4 +108,5 @@ The seed script only needs to be run once for a new database.
 
 
 Author
+
 Atharva Kulkarni
