@@ -4,9 +4,7 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Stores from "../pages/Stores";
 import AdminDashboard from "../pages/AdminDashboard";
-import OwnerDashboard from "<div styleName={} />
-<pages />
-<o></o>wnerDashboard"
+import OwnerDashboard from "../pages/OwnerDashboard"
 
 import ProtectedRoute from "../components/ProtectedRoute";
 
