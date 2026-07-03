@@ -107,6 +107,5 @@ Once logged in as the administrator, you can use the **Admin Dashboard** to:
 The seed script only needs to be run once for a new database.
 
 
-Author
-
+**Author**
 Atharva Kulkarni
