@@ -270,4 +270,4 @@ Backend .env
 PORT=3000
 DATABASE_URL=your_database_url
 JWT_SECRET=your_secret_key
->>>>>>> 0a07ec544a8fced1872dec51814e0a2579311954
+
